@@ -7,7 +7,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-storybook2": "build-storybook -o ./docs"
   },
   "dependencies": {
     "@kousum/semi-animation-vue": "^2.1.15-alpha.0",
