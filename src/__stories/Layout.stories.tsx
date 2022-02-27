@@ -2,7 +2,7 @@ import {defineComponent, ref, h, StyleValue, Fragment} from 'vue'
 import {storiesOf, Meta, Story} from '@storybook/vue3';
 import {Button, Dropdown,DropdownMenu,DropdownItem,DropdownDivider,} from "@kousum/semi-ui-vue";
 import {ButtonProps} from "@kousum/semi-ui-vue/lib/button";
-import Layout, {LayoutContent, LayoutFooter, LayoutHeader, LayoutSider} from "@kousum/semi-ui-vue/lib/layout";
+import Layout, {LayoutContent, LayoutFooter, LayoutHeader, LayoutSider} from "@kousum/semi-ui-vue/lib/layout/Index";
 
 
 export default {
