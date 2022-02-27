@@ -1,8 +1,6 @@
 import {defineComponent, ref, h, StyleValue, Fragment} from 'vue'
 import {storiesOf, Meta, Story} from '@storybook/vue3';
-import {Button, Dropdown} from "@kousum/semi-ui-vue";
-import {IconClose, IconEdit, IconTick, IconUser, IconDelete, IconTreeTriangleDown} from "@kousum/semi-icons-vue";
-import {ButtonGroup, SplitButtonGroup} from "@kousum/semi-ui-vue";
+import {Button, Dropdown,DropdownMenu,DropdownItem,DropdownDivider} from "@kousum/semi-ui-vue";
 import {ButtonProps} from "@kousum/semi-ui-vue/lib/button";
 
 
@@ -11,8 +9,8 @@ export default {
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: 'Button',
-  component: Button,
+  title: 'Dropdown',
+  component: Dropdown,
   parameters: {
     actions: {
       handles: ['mouseover', 'click .btn'],
@@ -30,15 +28,43 @@ export default {
 const Template: Story<ButtonProps> = (args: ButtonProps) => ({
   components: { Button },
   setup(){
-    return ()=><Button {...args} >UI semi{JSON.stringify(args)}</Button>
+    return ()=>
+      <Dropdown
+        trigger="hover"
+        render={
+          <DropdownMenu>
+            <DropdownItem disabled>1111</DropdownItem>
+            <DropdownDivider />
+            <DropdownItem selected={true}>
+              2222 What if the text is super long? Longer than whatever you've known
+              <Dropdown
+                trigger="click"
+                render={
+                  <DropdownMenu>
+                    <DropdownItem disabled>title</DropdownItem>
+                    <DropdownDivider />
+                    <DropdownItem selected={true}>
+                      2222 What if the text is super long? Longer than whatever you've known
+                    </DropdownItem>
+                    <DropdownItem>It looks OK</DropdownItem>
+                  </DropdownMenu>
+                }
+              >
+                <div>分割线</div>
+              </Dropdown>
+            </DropdownItem>
+            <DropdownItem>It looks OK</DropdownItem>
+          </DropdownMenu>
+        }
+      >
+        <Button>hover me</Button>
+
+      </Dropdown>
   },
 });
 export const Primary = Template.bind({});
 Primary.args = { type: 'primary', };
-export const SolidTheme = Template.bind({});
-SolidTheme.args = { type: 'warning', theme: 'solid', };
-export const block = Template.bind({});
-block.args = { block: true, };
+
 
 //
 //

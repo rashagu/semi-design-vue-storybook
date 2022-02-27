@@ -2,14 +2,14 @@
 import { ref } from 'vue'
 import {Button} from "@kousum/semi-ui-vue";
 
-defineProps<{ msg: string }>()
+defineProps<{ label?: string, background?: string }>()
 
 const count = ref(0)
 </script>
 
 <template>
   <div>
-    <Button>Button</Button>
+    <Button :style="{background:background}">{{ label }}</Button>
   </div>
 </template>
 
