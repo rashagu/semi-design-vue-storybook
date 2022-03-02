@@ -19,11 +19,22 @@ export default {
     },
   },
   argTypes: {
-    onClick: { action: 'clicked' },
     theme: {
       options: ['light', 'solid'],
       control: { type: 'select' },
     },
+    type:{
+      options: ['primary', 'secondary', 'tertiary', 'warning', 'danger'],
+      control: { type: 'select' },
+    },
+    size:{
+      options: ['default', 'small', 'large'],
+      control: { type: 'select' },
+    },
+  },
+  args: {
+    //👇 Now all Button stories will be primary.
+    block: false, loading: false, circle: false,
   },
 } as Meta<ButtonProps>;
 //👇 We create a “template” of how args map to rendering
@@ -35,7 +46,7 @@ const Template: Story<ButtonProps> = (args: ButtonProps) => ({
 });
 export const Primary = Template.bind({});
 Primary.args = { type: 'primary', };
-export const SolidTheme = Template.bind({});
+export const SolidTheme = Template.bind({a:123});
 SolidTheme.args = { type: 'warning', theme: 'solid', };
 export const block = Template.bind({});
 block.args = { block: true, };

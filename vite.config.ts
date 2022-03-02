@@ -4,13 +4,13 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server:{
+    port: 3031,
+  },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `
-          @import "~@douyinfe/semi-theme-default/scss/global.scss";
-          @import "~@douyinfe/semi-theme-default/scss/index.scss";
-        `,
+
       }
     }
   },

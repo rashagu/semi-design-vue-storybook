@@ -11,6 +11,26 @@ export default {
   */
   title: 'ButtonTemplate',
   component: Button,
+  parameters: {
+    actions: {
+      handles: ['mouseover', 'click .btn'],
+    },
+  },
+  argTypes: {
+    onClick: { action: 'clicked' },
+    theme: {
+      options: ['light', 'solid'],
+      control: { type: 'select' },
+    },
+    type:{
+      options: ['primary', 'secondary', 'tertiary', 'warning', 'danger'],
+      control: { type: 'select' },
+    }
+  },
+  args: {
+    //👇 Now all Button stories will be primary.
+    type: 'primary',
+  },
 };
 
 
@@ -20,7 +40,7 @@ const Template: Story<ButtonProps> = (args:any) => ({
   setup() {
     return { args };
   },
-  template: '<Button v-bind:args>Button</Button>',
+  template: '<Button v-bind="args">Button</Button>',
 });
 
 //👇 Each story then reuses that template

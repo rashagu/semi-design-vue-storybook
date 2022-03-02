@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .grid .semi-row,
 .grid .semi-row-flex {
     text-align: center;
