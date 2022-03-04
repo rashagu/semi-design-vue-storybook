@@ -1475,10 +1475,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@kousum/semi-animation-vue@^2.1.20-alpha.0":
-  version "2.1.20-alpha.0"
-  resolved "https://registry.yarnpkg.com/@kousum/semi-animation-vue/-/semi-animation-vue-2.1.20-alpha.0.tgz#0fe475d63987ff97c0d1c36fac74c36e7a2212f5"
-  integrity sha512-OeQii5YLdp+N3Iu396VBjXqCcgKzxZNBW3sFB11XQX6xqL3GsIXbYdEhMHol5sclLv28KFsXewrtLORBuW7hdA==
+"@kousum/semi-animation-vue@^2.1.22-alpha.0":
+  version "2.1.22-alpha.0"
+  resolved "https://registry.yarnpkg.com/@kousum/semi-animation-vue/-/semi-animation-vue-2.1.22-alpha.0.tgz#fe85a268244b29ccb7a13e917fe0cd76363dd255"
+  integrity sha512-/QEcwEf5xtW34JKJjcWiqd8HeVvODyUJrjxdrTVv0E9x7auAluygAtnFH4i1A8ePLkhlIWprWFX1hMqS5l5Keg==
   dependencies:
     "@douyinfe/semi-animation" "^2.3.1"
     "@douyinfe/semi-animation-styled" "^2.3.1"
@@ -1488,10 +1488,10 @@
     sass "^1.44.0"
     vue "^3.2.26"
 
-"@kousum/semi-icons-vue@^2.1.21-alpha.0":
-  version "2.1.21-alpha.0"
-  resolved "https://registry.yarnpkg.com/@kousum/semi-icons-vue/-/semi-icons-vue-2.1.21-alpha.0.tgz#10199045863c6b5c58f07983c390c3a1947367a6"
-  integrity sha512-qZNQahVT8lkd2QighT0xENahwYJNws3qcYlZeAvimRiaYCBIN22AOe3da/Grf2YHfVv4WZk2TNP06fvImpasWA==
+"@kousum/semi-icons-vue@^2.1.22-alpha.0":
+  version "2.1.22-alpha.0"
+  resolved "https://registry.yarnpkg.com/@kousum/semi-icons-vue/-/semi-icons-vue-2.1.22-alpha.0.tgz#4f6ca735bbbd910a2e88def2cbcbb5dd6f5907db"
+  integrity sha512-X5wLUHxXA4+kuMZv4oydbPPFNTUvlOsowh+pamy+UFcjzCylVvwkv9UnW1qLjZ+8Ei8TbrZAhPtBmrsRHbJveg==
   dependencies:
     "@douyinfe/semi-foundation" "^2.3.1"
     "@douyinfe/semi-theme-default" "^2.3.1"
@@ -1499,15 +1499,15 @@
     sass "^1.44.0"
     vue "^3.2.23"
 
-"@kousum/semi-ui-vue@^2.1.21-alpha.0":
-  version "2.1.21-alpha.0"
-  resolved "https://registry.yarnpkg.com/@kousum/semi-ui-vue/-/semi-ui-vue-2.1.21-alpha.0.tgz#ae7121119124d40dc247e249eb233c833387327c"
-  integrity sha512-TuA77LqVT4PSuuDsIN1qbOtLZjXZLq2/ejrFcBtyjuUDNU0MrY8Q5c6hSpKXJtFvvj9JQywbZSuGrmH39tQX9Q==
+"@kousum/semi-ui-vue@^2.1.23-alpha.0":
+  version "2.1.23-alpha.0"
+  resolved "https://registry.yarnpkg.com/@kousum/semi-ui-vue/-/semi-ui-vue-2.1.23-alpha.0.tgz#a5ef01fe05dd8a385cf14497e46797a4b0a2c848"
+  integrity sha512-21eaBToH3G2PmdHI5meVSb/Ql8OzvPlvDkKTNdglFm+/dwrakEtsQgXyDSDOoxIDr/Z64KcIGDM0QEeacGe1HQ==
   dependencies:
     "@douyinfe/semi-foundation" "^2.5.0"
     "@douyinfe/semi-theme-default" "^2.5.0"
-    "@kousum/semi-animation-vue" "^2.1.20-alpha.0"
-    "@kousum/semi-icons-vue" "^2.1.21-alpha.0"
+    "@kousum/semi-animation-vue" "^2.1.22-alpha.0"
+    "@kousum/semi-icons-vue" "^2.1.22-alpha.0"
     "@types/lodash" "^4.14.178"
     async-validator "^4.0.7"
     classnames "^2.3.1"
