@@ -11,9 +11,9 @@
     "build-storybook2": "build-storybook -o ./docs"
   },
   "dependencies": {
-    "@kousum/semi-animation-vue": "^2.1.20-alpha.0",
-    "@kousum/semi-icons-vue": "^2.1.21-alpha.0",
-    "@kousum/semi-ui-vue": "^2.1.21-alpha.0",
+    "@kousum/semi-animation-vue": "^2.1.22-alpha.0",
+    "@kousum/semi-icons-vue": "^2.1.22-alpha.0",
+    "@kousum/semi-ui-vue": "^2.1.22-alpha.0",
     "@types/lodash": "^4.14.178",
     "async-validator": "^4.0.7",
     "classnames": "^2.3.1",
