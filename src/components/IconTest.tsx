@@ -1,5 +1,6 @@
 import {defineComponent, ref, h, onMounted,} from 'vue'
 import * as icons  from "@kousum/semi-icons-vue";
+import {Col, Row} from "@kousum/semi-ui-vue";
 
 export interface ExampleProps {
   name?: string
@@ -22,15 +23,18 @@ const App = defineComponent<ExampleProps>((props, {slots}) => {
   })
   return () => (
     <div id={'a'}  style={{color:'#E91E63', display:'flex', flexWrap:'wrap',}}>
-      {/*<Button />*/}
-      {domArr.value.map((item, index)=>{
-        return (
-          <div key={index} style={{width:'20%'}}>
-            {item.vNode}：
-            {item.name}
-          </div>
-        )
-      })}
+      <Row gutter={{xs:16,sm:16,md:16,lg:24,xl:24,xxl:24}}>
+        {domArr.value.map((item, index)=>{
+          return (
+            <Col xs={24} sm={12} md={12} lg={6}>
+              <div key={index} style={{}}>
+                {item.vNode}：
+                {item.name}
+              </div>
+            </Col>
+          )
+        })}
+      </Row>
     </div>
   )
 })

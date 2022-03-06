@@ -33,7 +33,7 @@ const Template: Story<ButtonProps> = (args: ButtonProps) => ({
         trigger="hover"
         render={
           <DropdownMenu>
-            <DropdownItem disabled>1111</DropdownItem>
+            <DropdownItem disabled>菜单</DropdownItem>
             <DropdownDivider />
             <DropdownItem selected={true}>
               2222 What if the text is super long? Longer than whatever you've known
@@ -58,7 +58,6 @@ const Template: Story<ButtonProps> = (args: ButtonProps) => ({
         }
       >
         <Button>hover me</Button>
-
       </Dropdown>
   },
 });

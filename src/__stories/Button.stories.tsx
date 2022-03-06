@@ -41,7 +41,7 @@ export default {
 const Template: Story<ButtonProps> = (args: ButtonProps) => ({
   components: { Button },
   setup(){
-    return ()=><Button {...args} >UI semi{JSON.stringify(args)}</Button>
+    return ()=><Button {...args} >UI semi</Button>
   },
 });
 export const Primary = Template.bind({});
@@ -50,6 +50,9 @@ export const SolidTheme = Template.bind({a:123});
 SolidTheme.args = { type: 'warning', theme: 'solid', };
 export const block = Template.bind({});
 block.args = { block: true, };
+export const icon = Template.bind({});
+icon.args = { icon: <IconEdit />, };
+
 
 //
 //
