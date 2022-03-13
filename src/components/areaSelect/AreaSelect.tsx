@@ -192,8 +192,12 @@ const AreaSelect = defineComponent<ExampleProps>((props, {slots}) => {
 
   function searchInputChangeFunc(value: any) {
     if (o_data && o_data_city){
-      getDataFunc(o_data,value);
-      getDataCityFunc(o_data_city,value);
+      if (value){
+        getDataFunc(o_data,value);
+        getDataCityFunc(o_data_city,value);
+      }else{
+        getData();
+      }
     }
   }
 
