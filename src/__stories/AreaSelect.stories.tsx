@@ -1,12 +1,9 @@
 import {defineComponent, ref, h, StyleValue, Fragment} from 'vue'
 import {storiesOf, Meta, Story} from '@storybook/vue3';
-import {Input, TextArea,Text} from "@kousum/semi-ui-vue";
-import {IconClose, IconEdit, IconTick, IconUser, IconDelete, IconTreeTriangleDown} from "@kousum/semi-icons-vue";
-import {ButtonGroup, SplitButtonGroup} from "@kousum/semi-ui-vue";
 import {ButtonProps} from "@kousum/semi-ui-vue/lib/button";
 import {InputProps} from "@kousum/semi-ui-vue/lib/input";
-import AreaSelect from "../components/areaSelect/AreaSelect";
 import AreaSelectDemo from "../components/AreaSelectDemo";
+import {Text} from "@kousum/semi-ui-vue";
 
 
 export default {
@@ -14,14 +11,14 @@ export default {
   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
   * to learn how to generate automatic titles
   */
-  title: 'Input',
+  title: '自定义混合组件-地区选择器',
   parameters: {
     actions: {
       handles: ['mouseover', 'click .btn'],
     },
   },
   argTypes: {
-    // theme: {
+    // defaultValue: {
     //   options: ['light', 'solid'],
     //   control: { type: 'select' },
     // },
@@ -35,8 +32,12 @@ export default {
     // },
   },
   args: {
-    //👇 Now all Button stories will be primary.
-    // block: false, loading: false, circle: false,
+    //👇 Now all Button stories will be primary.  name?: string,
+    //   defaultValue: '',
+    //   style?: CSSProperties,
+    //   placeholder?: string,
+    //   onChange:(v:any)=>void,
+    //   disabled?:boolean
   },
 } as Meta<InputProps>;
 //👇 We create a “template” of how args map to rendering
@@ -44,38 +45,17 @@ const Template: Story<ButtonProps> = (args: ButtonProps) => ({
   setup(){
     const defaultValue = ref('asd')
     return ()=><div>
-      <AreaSelectDemo />
-      {defaultValue.value}
-      <br/><br/>
-      <Input disabled suffix={<Text strong type='secondary' style={{ marginRight: 8 }}>Suffix</Text>} showClear></Input>
-      <br/><br/>
-      <Input showClear mode={'password'} placeholder={'click to clear'}></Input>
-      <br/><br/>
-      <Input showClear defaultValue={'defaultValue.value'} value={defaultValue.value}  placeholder={'click to clear'}></Input>
-      <br/><br/>
-      <Input showClear defaultValue={defaultValue.value} placeholder={'click to clear'}></Input>
-      <br/><br/>
-      <TextArea defaultValue={defaultValue.value} placeholder={'请输入'} />
-      <br/><br/>
-      <TextArea value={defaultValue.value} placeholder={'请输入'} />
-      <br/><br/>
-      <TextArea v-model={[defaultValue.value,'value']} placeholder={'请输入'} />
-      <br/><br/>
-      <TextArea maxCount={100} showClear/>
+      <Text>地区选择器</Text>
+      <div>
 
-      <br/><br/>
-      <Input defaultValue='ies' validateStatus='warning'></Input>
-      <br/><br/>
-      <br/><br/>
-      <Input defaultValue='ies' validateStatus='error'></Input>
-      <br/><br/>
-      <Input defaultValue='ies'></Input>
-      <br/><br/>
+        <Text>用到的组件：Button, Input, Popover, Radio, RadioGroup</Text>
+      </div>
+      <AreaSelectDemo  />
     </div>
   },
 });
-export const Primary = Template.bind({});
-Primary.args = { type: 'primary', };
+export const AreaSelectDemo1 = Template.bind({});
+AreaSelectDemo1.args = { };
 
 //
 //

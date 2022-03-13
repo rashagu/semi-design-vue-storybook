@@ -1,32 +1,27 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import {Button} from "@kousum/semi-ui-vue";
+import {Button, Input, RadioGroup,Popover} from "@kousum/semi-ui-vue";
+import AreaSelect from "./areaSelect/AreaSelect";
 
 defineProps<{ msg: string }>()
 
+function onChange() {
+
+}
 const count = ref(0)
 </script>
 
 <template>
   <div>
     <Button>Button</Button>
+    <Popover :content="123" >
+      <Button>{pos}</Button>
+    </Popover>
+    <div style="width: 30%">
+      <AreaSelect :defaultValue="''" @change="onChange"/>
+    </div>
   </div>
 </template>
 
 <style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
 </style>

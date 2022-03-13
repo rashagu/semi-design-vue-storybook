@@ -7,10 +7,6 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `
-          @import "~@douyinfe/semi-theme-default/scss/global.scss";
-          @import "~@douyinfe/semi-theme-default/scss/index.scss";
-        `,
       }
     }
   },
