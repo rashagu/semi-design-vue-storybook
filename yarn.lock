@@ -1499,10 +1499,10 @@
     sass "^1.44.0"
     vue "^3.2.23"
 
-"@kousum/semi-ui-vue@^2.1.24-alpha.0":
-  version "2.1.24-alpha.0"
-  resolved "https://registry.yarnpkg.com/@kousum/semi-ui-vue/-/semi-ui-vue-2.1.24-alpha.0.tgz#0fb1b469ab85f5478d60f07cafbdc04c86cb72d2"
-  integrity sha512-hbqr0NgqARukRucfxi3ACELdc74cqDadRNYsiJtnJLGm7ahyFHx5HTg0Xw+BN7fAFf21MZL+tu9BVmzFStTdaw==
+"@kousum/semi-ui-vue@^2.1.25-alpha.0":
+  version "2.1.25-alpha.0"
+  resolved "https://registry.yarnpkg.com/@kousum/semi-ui-vue/-/semi-ui-vue-2.1.25-alpha.0.tgz#6f882a8e685502bcb4ad66c456384588e42fed89"
+  integrity sha512-ltxpzEg9LA8Uo5dtUlA+Qbs2wFhjWbaYIjNSupoNPzyv1TqiCkpMOPpVaxnglBjKD+PiTCSkx9QE3FuSoFsBbA==
   dependencies:
     "@douyinfe/semi-foundation" "^2.5.0"
     "@douyinfe/semi-theme-default" "^2.5.0"
