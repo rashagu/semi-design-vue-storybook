@@ -1,7 +1,6 @@
 import {CSSProperties, defineComponent, h, nextTick, onMounted, ref, watch, withMemo} from 'vue'
 import {Button, Input, Popover, Radio, RadioGroup} from "@kousum/semi-ui-vue";
-// TODO 需要添加一个gulp转换scss
-import styles from "./AreaSelect.module.css";
+import styles from "./AreaSelect.module.scss";
 import {
   getPcCode,
   PcCodeObjectData,
